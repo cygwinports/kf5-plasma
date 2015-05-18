@@ -1,0 +1,39 @@
+ORIG_PN="plasma-framework"
+inherit kf5
+
+NAME="kf5-plasma"
+VERSION=5.10.0
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="KDE 5 Plasma user interface library"
+DESCRIPTION="The Plasma framework provides the foundations that can be used to
+build a primary user interface, from graphical to logical components."
+
+PKG_NAMES="libKF5Plasma5 libKF5Plasma-devel"
+libKF5Plasma5_CONTENTS="
+	usr/bin/cygKF5Plasma-5.dll
+	usr/bin/cygKF5PlasmaQuick-5.dll
+	usr/bin/plasmapkg2.exe
+	${QT5_PLUGINSDIR#/}/kf5/kded/platformstatus.dll
+	${QT5_PLUGINSDIR#/}/plasma_appletscript_declarative.dll
+	${QT5_PLUGINSDIR#/}/plasma_engine_testengine.dll
+	${QT5_QMLDIR#/}/QtQuick/Controls/Styles/Plasma/
+	${QT5_QMLDIR#/}/org/kde/plasma/
+	usr/share/doc/
+	usr/share/kservices5/
+	usr/share/kservicetypes5/
+	usr/share/locale/
+	usr/share/man/
+	usr/share/plasma/
+"
+libKF5Plasma_devel_REQUIRES="libKF5Archive-devel libKF5CoreAddons-devel libKF5Declarative-devel libKF5GlobalAccel-devel libKF5GuiAddons-devel libKF5I18n-devel libKF5IconThemes-devel libKF5KIO-devel libKF5Notifications-devel libKF5Package-devel libKF5Service-devel libKF5WindowSystem-devel libKF5XmlGui-devel libQt5Core-devel libQt5Gui-devel libQt5Quick-devel libQt5Svg-devel libQt5X11Extras-devel"
+libKF5Plasma_devel_CONTENTS="
+	usr/include/KF5/Plasma/
+	usr/include/KF5/plasma/
+	usr/include/KF5/plasma_version.h
+	usr/lib/cmake/KF5Plasma/
+	usr/lib/cmake/KF5PlasmaQuick/
+	usr/lib/libKF5Plasma.dll.a
+	usr/lib/libKF5PlasmaQuick.dll.a
+	usr/share/dbus-1/interfaces/
+"
