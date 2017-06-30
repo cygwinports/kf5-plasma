@@ -2,7 +2,7 @@ ORIG_PN="plasma-framework"
 inherit kf5
 
 NAME="kf5-plasma"
-VERSION=5.27.0
+VERSION=5.35.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE 5 Plasma user interface library"
@@ -18,6 +18,7 @@ libKF5Plasma5_CONTENTS="
 	${QT5_PLUGINSDIR#/}/plasma/scriptengines/
 	${QT5_PLUGINSDIR#/}/plasma_engine_testengine.dll
 	${QT5_QMLDIR#/}/QtQuick/Controls/Styles/Plasma/
+	${QT5_QMLDIR#/}/QtQuick/Controls.2/Plasma/
 	${QT5_QMLDIR#/}/org/kde/plasma/
 	usr/share/doc/
 	usr/share/kservices5/
