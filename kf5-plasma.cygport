@@ -2,7 +2,7 @@ ORIG_PN="plasma-framework"
 inherit kf5
 
 NAME="kf5-plasma"
-VERSION=5.35.0
+VERSION=5.39.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE 5 Plasma user interface library"
